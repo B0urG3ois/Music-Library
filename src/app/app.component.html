@@ -1,0 +1,27 @@
+<ion-app>
+  <ion-menu side="end" menuId="m1">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/musics">
+            <ion-icon name="musical-note" slot="start"></ion-icon>
+            <ion-label>Music Library</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/favs">
+            <ion-icon name="heart" slot="start"></ion-icon>
+            <ion-label>Your Favorite Songs</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet main></ion-router-outlet>
+</ion-app>
