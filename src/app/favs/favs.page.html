@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Your Favorite Musics</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="m1"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p style="margin: 5%; font-weight: bold; color: grey">SONGS</p>
+  <ion-list>
+    <ion-item *ngFor="let fav of favSong">
+      <ion-label>
+        <h2>{{ fav.title }}</h2>
+        <h5 style="color: grey">{{ fav.minute }} minutes {{ fav.second }} seconds</h5>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
